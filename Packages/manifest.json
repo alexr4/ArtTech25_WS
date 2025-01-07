@@ -2,6 +2,7 @@
   "dependencies": {
     "com.bonjour-lab.opticalflow": "1.0.3",
     "com.bonjour-lab.utils": "0.0.20",
+    "com.bonjour-lab.vatutils": "0.0.8",
     "com.unity.collab-proxy": "2.6.0",
     "com.unity.feature.development": "1.0.2",
     "com.unity.multiplayer.center": "1.0.0",
@@ -12,7 +13,9 @@
     "com.unity.visualscripting": "1.9.5",
     "jp.ikep.mediapipe.blazepose": "1.3.0",
     "jp.keijiro.klak.testtools": "1.0.4",
-    "jp.keijiro.mediapipe.blazeface": "1.0.0",
+    "jp.keijiro.mediapipe.blazeface": "1.2.0",
+    "jp.keijiro.mediapipe.facelandmark": "1.1.0",
+    "jp.keijiro.mediapipe.iris": "1.2.0",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
