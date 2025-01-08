@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 8400000, guid: 63b85b8b6b37bc24894bc8ae88daa1dc, type: 2}
-  blazePoseModel: 0
+  blazePoseModel: 1
   poseThreshold: 0.75
   humanScoreThreshold: 0.95
   userHistorySize: 120
@@ -426,7 +426,7 @@ MonoBehaviour:
   bonesIco: {fileID: 2800000, guid: 658a8dc08c199104ea23f709006b27b9, type: 3}
   debugBoneIcoSize: 50
   whichBufferToFilter: 3
-  landmarksToFilter: 1
+  landmarksToFilter: 0
   filtertype: 1
   Q: 0.000001
   R: 0.01

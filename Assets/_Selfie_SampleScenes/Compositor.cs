@@ -7,7 +7,7 @@ public sealed class Compositor : MonoBehaviour
 {
     enum OutputMode { Source, Mask, StaticBG, DynamicBG }
 
-    [SerializeField] ImageSource _source = null;
+    [SerializeField] RenderTexture _source = null;
     [SerializeField] OutputMode _outputMode = OutputMode.StaticBG;
     [SerializeField] Texture2D _bgImage = null;
     [SerializeField] UI.RawImage _outputUI = null;
@@ -35,9 +35,9 @@ public sealed class Compositor : MonoBehaviour
 
     void Update()
     {
-        _filter.ProcessImage(_source.Texture);
+        _filter.ProcessImage(_source);
 
-        _material.SetTexture("_SourceTexture", _source.Texture);
+        _material.SetTexture("_SourceTexture", _source);
         _material.SetTexture("_MaskTexture", _filter.MaskTexture);
         _material.SetTexture("_BGTexture", _bgImage);
         Graphics.Blit(null, _composited, _material, (int)_outputMode);
