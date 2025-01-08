@@ -1,0 +1,20 @@
+#pragma kernel UpdateVertices
+#pragma kernel UpdateNormals
+
+RWStructuredBuffer<float3> vertexBuffer;
+RWStructuredBuffer<float3> normalBuffer;
+RWStructuredBuffer<float4> refinedFaceVertexBuffer;
+
+[numthreads(256, 1, 1)]
+void UpdateVertices (uint id : SV_DispatchThreadID)
+{
+    // Modify the vertex position (e.g., move upwards)
+    vertexBuffer[id] = refinedFaceVertexBuffer[id].xyz - float3(.5, .5, 0);
+}
+
+[numthreads(256, 1, 1)]
+void UpdateNormals (uint id : SV_DispatchThreadID)
+{
+    // Modify the vertex position (e.g., move upwards)
+    normalBuffer[id] = float3(normalBuffer[id].x, normalBuffer[id].y, 1.0-normalBuffer[id].z);
+}
