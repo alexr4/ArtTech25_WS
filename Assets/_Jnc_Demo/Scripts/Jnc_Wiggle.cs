@@ -18,7 +18,7 @@ public class Jnc_Wiggle : MonoBehaviour
 
     public bool randomSeed = true;
 
-    Jnc_Utils.Wiggle wiggle = new();
+    Jnc_Utils.WigglePosition wiggle = new();
 
     Vector3 initialPosition;
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class Jnc_Utils
 {
-    public class Wiggle
+    public class WigglePosition
     {
         class Position
         {

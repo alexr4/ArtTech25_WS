@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -997,7 +997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: 0
   frequency: 3
-  amplitude: 0.18
+  amplitude: 0.5
   count: 4
   randomSeed: 1
 --- !u!1 &1043946564
@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: 0
   frequency: 3
-  amplitude: 0.18
+  amplitude: 1
   count: 4
   randomSeed: 1
 --- !u!1 &1378123060
@@ -1649,7 +1649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: 0
   frequency: 3
-  amplitude: 0.18
+  amplitude: 0.5
   count: 4
   randomSeed: 1
 --- !u!43 &1521963100
@@ -1940,7 +1940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: 0
   frequency: 3
-  amplitude: 0.18
+  amplitude: 1
   count: 4
   randomSeed: 1
 --- !u!1 &1866558595
