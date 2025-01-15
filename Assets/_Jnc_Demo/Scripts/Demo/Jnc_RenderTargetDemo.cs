@@ -14,6 +14,9 @@ public class Jnc_RenderTargetDemo : MonoBehaviour
     [Range(0, 0.05f)]
     public float decayFrameFactor = 1 / 256f;
 
+    [Tooltip("(Optional) The render texture to draw to.")]
+    public RenderTexture renderTexture;
+
     Material brushMaterial;
     Material fadeToMaterial;
 
@@ -70,7 +73,12 @@ public class Jnc_RenderTargetDemo : MonoBehaviour
             Graphics.Blit(src, dst, fadeToMaterial);
 
             // Display the render target
-            GetComponent<Image>().material.mainTexture = dst;
+            if (TryGetComponent<Image>(out var image))
+                image.material.mainTexture = dst;
+
+            // If a render texture is set, update it
+            if (renderTexture != null)
+                Graphics.Blit(dst, renderTexture);
         }
     }
 }
