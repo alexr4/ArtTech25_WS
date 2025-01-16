@@ -15,7 +15,6 @@ public class Jnc_RTCanvasRenderer : MonoBehaviour
     {
         GetComponentInChildren<TMPro.TextMeshProUGUI>().text = title;
 
-        rtCamera.targetTexture = renderTexture;
         rtCamera.Render();
 
         // Clone the render texture to a regular Texture2D
